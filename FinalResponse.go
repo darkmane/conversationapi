@@ -1,5 +1,5 @@
 package conversationapi
 
 type FinalResponse struct {
-	RichResponse RichResponse `json:"richResponse"`
+	RichResponse *RichResponse `json:"richResponse"`
 }
