@@ -1,7 +1,7 @@
 package conversationapi
 
 type CustomPushMessage struct {
-	Target           *Target           `json:"target"`
-	OrderUpdate      *OrderUpdate      `json:"orderUpdate"`
-	UserNotification *UserNotification `json:"userNotification"`
+	Target           *Target           `json:"target,omitempty"`
+	OrderUpdate      *OrderUpdate      `json:"orderUpdate,omitempty"`
+	UserNotification *UserNotification `json:"userNotification,omitempty"`
 }

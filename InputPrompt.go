@@ -1,6 +1,6 @@
 package conversationapi
 
 type InputPrompt struct {
-	RichInitialPrompt *RichResponse
-	NoInputPrompts    *[]SimpleResponse
+	RichInitialPrompt *RichResponse     `json:"richInitialPrompt,omitempty"`
+	NoInputPrompts    *[]SimpleResponse `json:"noInputPrompts,omitempty"`
 }

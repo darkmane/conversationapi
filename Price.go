@@ -3,8 +3,8 @@ package conversationapi
 import "strings"
 
 type Price struct {
-	Type   PriceType `json:"type"`
-	Amount Money     `json:"amount"`
+	Type   PriceType `json:"type,omitempty"`
+	Amount Money     `json:"amount,omitempty"`
 }
 
 type PriceType int64

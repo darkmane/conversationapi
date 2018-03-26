@@ -3,12 +3,12 @@ package conversationapi
 type OrderUpdate struct {
 	GoogleOrderId          string                 `json:"googleOrderId"`
 	ActionOrderId          string                 `json:"actionOrderId"`
-	OrderState             *OrderState            `json:"orderState"`
-	OrderManagementActions *[]Action              `json:"orderManagementActions"`
-	Receipt                *Receipt               `json:"receipt"`
+	OrderState             *OrderState            `json:"orderState,omitempty"`
+	OrderManagementActions *[]Action              `json:"orderManagementActions,omitempty"`
+	Receipt                *Receipt               `json:"receipt,omitempty"`
 	UpdateTime             string                 `json:"updateTime"`
-	TotalPrice             *Price                 `json:"totalPrice"`
-	LineItemUpdates        *[]LineItemUpdate      `json:"lineItemUpdates"`
-	UserNotification       *UserNotification      `json:"userNotification"`
+	TotalPrice             *Price                 `json:"totalPrice,omitempty"`
+	LineItemUpdates        *[]LineItemUpdate      `json:"lineItemUpdates,omitempty"`
+	UserNotification       *UserNotification      `json:"userNotification,omitempty"`
 	InfoExtension          map[string]interface{} `json:"infoExtension"`
 }
