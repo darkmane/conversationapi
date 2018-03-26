@@ -8,5 +8,5 @@ type AppResponse struct {
 	ExpectedInputs     *[]ExpectedInput   `json:"expectedInputs,omitempty"`
 	FinalResponse      *FinalResponse     `json:"finalResponse,omitempty"`
 	CustomPushMessage  *CustomPushMessage `json:"customPushMessage,omitempty"`
-	IsInSandbox        bool               `json:"isInSandBox,omitempty"`
+	IsInSandbox        bool               `json:"isInSandbox,omitempty"`
 }
