@@ -1,10 +1,10 @@
 package conversationapi
 
 type AppRequest struct {
-	User         *User         `json:"user"`
-	Device       *Device       `json:"device"`
-	Surface      *Surface      `json:"surface"`
-	Conversation *Conversation `json:"conversation"`
-	Inputs       *[]Input      `json:"inputs"`
+	User         *User         `json:"user,omitempty"`
+	Device       *Device       `json:"device,omitempty"`
+	Surface      *Surface      `json:"surface,omitempty"`
+	Conversation *Conversation `json:"conversation,omitempty"`
+	Inputs       *[]Input      `json:"inputs,omitempty"`
 	IsInSandbox  bool          `json:"isInSandbox"`
 }
